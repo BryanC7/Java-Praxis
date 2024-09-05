@@ -1,0 +1,114 @@
+/* Globales */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+i {
+    color: white;
+    font-size: 7rem;
+}
+
+.bg-pink {
+    background-color: var(--pink);
+}
+
+.bg-cian {
+    background-color: var(--dark-cian);
+}
+
+/* Colores */
+
+:root {
+    --pink: #e83e8c;
+    --dark-cian: #17A2B8;
+}
+
+/* Navbar */
+
+.navbar-toggler {
+    font-size: 2rem;
+}
+
+/* Sección cards */
+
+.title {
+    margin: 6rem 0;
+}
+
+.link-size {
+    font-size: 1.1rem;
+    padding: 1rem;
+}
+
+.custom-card {
+    width: 28rem;
+}
+
+.card-margin {
+    margin-bottom: 5rem;
+}
+
+/* Sección íconos */
+
+.icons-section {
+    padding: 6rem 0;
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .title {
+        margin: 3rem 0;
+    }
+
+    .custom-card {
+        width: 24rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-card {
+        width: 80%;
+    }
+
+    .link-size {
+        font-size: 1.5rem;
+    }
+
+    .container-navbar {
+        max-width: 80%;
+    }
+}

@@ -1,0 +1,162 @@
+/* Globals */
+
+:root{
+    --roboto:  "Roboto", sans-serif;
+    --roboto-light: 300;
+    --roboto-medium:500;
+    --black:#212529;
+    --border-grey: #DDDDDD;
+    --grey:#707070;
+    --grey-light:#F8F9FA;
+    --white:#fff;
+    --green:#28a745;
+}
+
+body {
+    font-weight: var(--roboto-light);
+    font-size:18px;
+    padding-top:60px;
+}
+
+/* Fonts */ 
+
+h4 {
+    font-weight: var(--roboto-light);
+    font-size:1.1rem;
+}
+
+h5 {
+    font-weight: var(--roboto-light);
+    font-size:1.5rem;
+}
+
+.p-small {
+    font-weight: var(--roboto-light);
+    font-size:.9rem;
+}
+
+/* Colors */
+
+.c-black {
+    color:var(--black);
+}
+
+.c-grey {
+    color:var(--grey);
+}
+
+.c-grey-light {
+    color:var(--grey-light);
+}
+
+.c-white {
+    color:var(--white);
+}
+
+.c-green {
+    color:var(--green);
+}
+
+/* Backgrounds */
+
+.bg-black {
+    background-color:var(--black);
+}
+
+.bg-grey {
+    background-color:var(--grey);
+}
+
+.bg-grey-light {
+    background-color:var(--grey-light);
+}
+
+.bg-white {
+    background-color:var(--white);
+}
+
+.bg-green {
+    background-color:var(--green);
+}
+
+/* Navbar */
+
+.navbar-brand img, .footer-logo{
+    max-width:100px;
+}
+
+/* Cards */
+
+.card .info-list {
+    border-bottom: var(--border-grey) solid 1px;
+}
+
+.card .info-list li, .discount-list li {
+    list-style: none;
+}
+
+.card .info-list li:nth-child(2) {
+    padding-bottom: 16px;
+}
+
+.card i {
+    margin-right: 10px;
+}
+
+.discount {
+    font-size: 1.3rem;
+    font-weight: var(--roboto-medium);
+}
+
+.discount-list li:nth-child(1) {
+    font-weight: var(--roboto-light);
+}
+
+.discount-list li:nth-child(2) {
+    padding-left: 15px;
+    font-size: 1.7rem;
+    font-weight: var(--roboto-medium);
+}
+
+.image-cutter {
+    overflow: hidden;
+    max-height: 260px;
+}
+
+/* Section contact */
+
+.section-contact .container {
+    max-width: 800px;
+}
+
+.btn-white{
+    background-color: var(--grey-light);
+    color: var(--black);
+    border: none;
+    font-weight: var(--roboto-medium);
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* Footer */ 
+
+.footer-logo{
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+/* Toggle */
+
+.navbar-toggler, .navbar-toggler:active, .navbar-toggler:focus {
+    border-color: white;
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}

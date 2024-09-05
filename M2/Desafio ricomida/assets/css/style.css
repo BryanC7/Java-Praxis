@@ -1,0 +1,183 @@
+/* Globales */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Cabin', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-size: 4rem;
+}
+
+h3, p {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 2.3rem;
+    font-weight: var(--lobster-bold);
+}
+
+hr {
+    opacity: 100;
+}
+
+ul, ol {
+    padding-left: 0;
+    font-size: 2rem;
+}
+
+.container-img {
+    overflow: hidden;
+    max-height: 38rem;
+}
+
+.bg-darkened {
+    background-color: var(--gray);
+}
+
+/* Root */
+
+:root {
+    --gray: #373A3C;
+    --red: #DC3545;
+    --light-gray: #DDDDDD;
+    --lobster: 'Lobster', sans-serif;
+    --bold: 700;
+}
+
+/* Navbar */
+
+.navbar-toggler {
+    font-size: 2rem;
+    border: white solid 1px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+.brand {
+    font-size: 3.7rem;
+    font-family: var(--lobster);
+    font-weight: var(--bold);
+    color: white;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+}
+
+/* 1era sección */
+
+.padding-rt {
+    padding-right: 20%;
+}
+
+.padding-rt h1,
+.padding-rt h3 {
+    margin: 2.5rem 0;
+    font-weight: var(--bold);
+}
+
+.btn {
+    padding: 1rem;
+    border: var(--light-gray) solid 1px;
+    font-size: 1.6rem;
+}
+
+/* Sección cards */
+
+.card-text {
+    font-size: 1.6rem;
+}
+
+/* Sección hero */
+
+.bg-hero {
+    background-color: var(--red);
+    padding-top: 15rem;
+    padding-bottom: 20rem;
+    text-align: center;
+}
+
+.bg-hero div h2 {
+    font-weight: var(--bold);
+    margin-bottom: 3rem;
+}
+
+.bg-hero div span {
+    font-size: 3rem;
+}
+
+.btn-hero {
+    color: white;
+    width: 20%;
+}
+
+.btn-hero:hover {
+    border: var(--gray) solid 1px;
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 80%;
+    }
+
+    .container-img {
+        margin-top: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .padding-rt {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .padding-rt h1 {
+        margin: 0;
+    }
+
+    .btn-hero {
+        color: white;
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    h3, p, ol {
+        font-size: 1.6rem;
+    }
+
+    .bg-hero {
+        padding: 3rem 0;
+    }
+
+    .bg-hero div span,
+    .bg-hero div span strong {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Pacientes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+</head>
+<body>
+    <header th:include="~{../static/header.html}"></header>
+
+    <section class="container">
+        <h2 class="my-5 text-center">Listado de Pacientes</h2>
+
+        <a class="btn btn-success mb-3" href="/form">Agregar Nuevo Paciente</a>
+
+        <table class="table table-bordered">
+            <thead class="table-header text-center table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre del Paciente</th>
+                    <th>Apellido del Paciente</th>
+                    <th>RUN</th>
+                    <th>Edad del Paciente</th>
+                    <th>Correo electrónico</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr th:each="patient : ${patients}">
+                    <td th:text="${patient.id}"></td>
+                    <td th:text="${patient.firstName}"></td>
+                    <td th:text="${patient.lastName}"></td>
+                    <td th:text="${patient.RUN}"></td>
+                    <td th:text="${patient.age}"></td>
+                    <td th:text="${patient.email}"></td>
+                    <td>
+                        <div class="d-flex gap-2">
+                            <a class="btn btn-warning" role="button" th:href="@{/update(id=${patient.id})}">Editar</a>
+                            <a class="btn btn-danger" role="button" th:href="@{/delete(id=${patient.id})}" onclick="return confirm('¿Estás seguro de eliminar al paciente de la lista?')">Eliminar</a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer th:include="~{../static/footer.html}"></footer>
+</body>
+</html>

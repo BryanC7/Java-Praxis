@@ -1,0 +1,3 @@
+Producto{articulo='dada', precio='dada', descripcion='asda', codigo='dada', talla='dada', marca='dada', color='das'}
+Producto{articulo='mbnmb', precio='mbmb', descripcion='mbmb', codigo='mbmb', talla='mbmb', marca='mbmb', color='mbmb'}
+Producto{articulo='czcz', precio='xczcz', descripcion='zccz', codigo='czcz', talla='czc', marca='czx', color='czx'}

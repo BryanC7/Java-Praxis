@@ -1,0 +1,112 @@
+/* Globales */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Cabin", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.section {
+    margin-top: 5rem;
+}
+
+.container-img {
+    overflow: hidden;
+    max-height: 15rem;
+}
+
+.btn-lg {
+    width: 8rem;
+    padding: .7rem;
+    font-size: 1.5rem;
+}
+
+/* Navbar */
+
+.navbar-toggler {
+    font-size: 2rem;
+    border: white solid 1px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+.nav-link {
+    font-size: 1.6rem;
+}
+
+.navbar-brand img {
+    max-width: 4rem;
+}
+
+/* Carousel */
+
+.carousel-inner {
+    max-height: 60rem;
+}
+
+/* Sección Destacados */
+
+.card {
+    height: 33rem;
+}
+
+.card-text {
+    font-size: 1.5rem;
+}
+
+/* Footer */
+
+.footer {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .container-img {
+        max-height: 20rem;
+    }
+
+    .container {
+        width: 80%;
+    }
+}

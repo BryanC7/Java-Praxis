@@ -1,0 +1,133 @@
+/* Globales */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 2.6rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+i {
+    font-size: 50px;
+    color: black;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 3.5rem;
+    }
+}
+
+.container {
+    width: 80%;
+}
+
+.navbar-toggler {
+    font-size: 2rem;
+    border: white solid 1px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+.btn-lg {
+    width: 10rem;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.btn-cian {
+    border: var(--dark-cian) solid 1px;
+    color: white;
+    background: var(--dark-cian);
+}
+
+.btn-cian:hover {
+    border: var(--dark-cian) solid 1px;
+    color: white;
+    background: var(--dark-cian);
+}
+
+.btn-cian-outline{ 
+    border: var(--dark-cian) solid 1px;
+    color: white;
+}
+
+.btn-cian-outline:hover {
+    background: var(--dark-cian);
+    color: white;
+    border: var(--dark-cian) solid 1px;
+}
+
+.btn-cian-outline-negative {
+    color: var(--dark-cian);
+}
+
+/* Colores */
+
+:root {
+    --gray: #373A3C;
+    --dark-cian: #17A2B8;
+}
+
+/* Navbar */
+
+.bg-navbar {
+    background-color: var(--gray);
+}
+
+.hero-container{
+    background: url(../img/bg-hero.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 630px;
+    padding: 0 15%;
+}
+
+.site-padding-lr {
+    padding-right: 7%;
+}
+
+/* Sección trabajos */
+
+.bg-works {
+    background-color: var(--dark-cian);
+}
+
+.size-img {
+    height: 280px;
+}

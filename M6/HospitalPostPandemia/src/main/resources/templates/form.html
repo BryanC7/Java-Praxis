@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>${patient == null ? 'Agregar Paciente' : 'Editar Paciente'}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
+</head>
+<body>
+    <header th:include="~{../static/header.html}"></header>
+
+    <div class="container mb-3">
+        <h2 class="my-5 text-center" th:text="${patient == null ? 'Inserte los datos del nuevo paciente' : 'Editar los datos del paciente'}"></h2>
+        <form class="w-50 mx-auto" th:action="@{/patients}" th:method="${patient == null} ? 'post' : 'put'">
+            <input th:if="${patient != null}" th:value="${patient.id}" type="hidden" name="id">
+            <div class="mb-3">
+                <label for="firstName">Nombre del Paciente:</label>
+                <input class="form-control" type="text" id="firstName" name="firstName" th:value="${patient != null ? patient.firstName : ''}" required />
+            </div>
+            <div class="mb-3">
+                <label for="lastName">Apellido del Paciente:</label>
+                <input class="form-control" type="text" id="lastName" name="lastName" th:value="${patient != null ? patient.lastName : ''}" required />
+            </div>
+            <div class="mb-3">
+                <label for="run">RUN:</label>
+                <input class="form-control" type="number" id="run" name="RUN" th:value="${patient != null ? patient.RUN : ''}" required />
+            </div>
+            <div class="mb-3">
+                <label for="age">Edad del Paciente:</label>
+                <input class="form-control" type="number" id="age" name="age" th:value="${patient != null ? patient.age : ''}" required />
+            </div>
+            <div class="mb-3">
+                <label for="email">Correo electrónico:</label>
+                <input class="form-control" type="text" id="email" name="email" th:value="${patient != null ? patient.email : ''}" required />
+            </div>
+
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary" th:text="${patient == null ? 'Agregar Paciente' : 'Actualizar Paciente'}"></button>
+            </div>
+        </form>
+    </div>
+
+    <footer th:include="~{../static/footer.html}"></footer>
+</body>
+</html>
